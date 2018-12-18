@@ -10,7 +10,7 @@ import pandas as pd
 import regex as re
 
 driver = webdriver.Chrome()
-zillow_pleasanton_url = "https://www.zillow.com/homes/recently_sold/Pleasanton-CA/house_type/47164_rid/globalrelevanceex_sort/37.739092,-121.750317,37.583086,-122.028408_rect/11_zm/"
+zillow_pleasanton_url = "https://www.trulia.com"
 driver.get(zillow_pleasanton_url)
 
 soup = BeautifulSoup(driver.page_source, 'html.parser')
