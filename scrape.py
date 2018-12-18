@@ -10,7 +10,7 @@ import pandas as pd
 import regex as re
 
 driver = webdriver.Chrome()
-zillow_pleasanton_url = "https://www.trulia.com"
+zillow_pleasanton_url = "https://www.trulia.com"# usually Zillow, but Zillow has required human captcha verification everytime
 driver.get(zillow_pleasanton_url)
 
 soup = BeautifulSoup(driver.page_source, 'html.parser')
