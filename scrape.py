@@ -10,16 +10,14 @@ import pandas as pd
 import regex as re
 
 driver = webdriver.Chrome()
-zillow_pleasanton_url = "https://www.trulia.com/CA/San_Diego/92130"
-driver.get(zillow_pleasanton_url)
+url = "https://www.redfin.com/zipcode/92130"
+driver.get(url)
 
 soup = BeautifulSoup(driver.page_source, 'html.parser')
-listings = soup.find_all("span", class_="cardPrice h5 man pan typeEmphasize noWrap typeTruncate")
-#print(listings)
+driver.find_element_by_css_selector('.modeOptionInnard table').click()
+driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+listings = soup.find_all("tr", class_="tableRow")
+print(listings)
 
-for i in listings:
-    print(i.get_text())
-
-
-specs = soup.find_all("ul",class_= "listInline typeTruncate mvn")
-#print(specs)
+#for i in listings:
+   # print(i.get_text())
