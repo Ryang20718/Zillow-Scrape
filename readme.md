@@ -1,4 +1,7 @@
 README
+Must export path to chromedriver FOLDER
+export PATH=$PATH:/path/to/driver/chrome-driver
+
 This is a Python wrapper for Zillow's API.
 
 Currrently it supports the GetDeepSearchResults and GetUpdatedPropertyDetails APIs.
