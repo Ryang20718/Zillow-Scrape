@@ -2,7 +2,7 @@ README
 Must export path to chromedriver FOLDER
 export PATH=$PATH:/path/to/driver/chrome-driver
 
-
+change csv to redfin.scv
 
 This is a Python wrapper for Zillow's API.
 
