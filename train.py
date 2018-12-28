@@ -12,3 +12,11 @@ melbourne_data.columns
 y = melbourne_data.Price
 X = melbourne_data[melbourne_features] #select specific columns to use in data
 X.describe()
+
+from sklearn.tree import DecisionTreeRegressor
+
+# Define model. Specify a number for random_state to ensure same results each run
+melbourne_model = DecisionTreeRegressor(random_state=1)
+
+# Fit model
+melbourne_model.fit(X, y)
