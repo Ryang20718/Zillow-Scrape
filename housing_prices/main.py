@@ -9,3 +9,4 @@ melbourne_data.describe()
 
 
 melbourne_data.columns
+y = melbourne_data.Price

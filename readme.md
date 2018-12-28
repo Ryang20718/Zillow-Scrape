@@ -97,3 +97,11 @@ The following attributes are not provided by the API:
 - last_sold_date
 - last_sold_price_currency
 - last_sold_price
+
+
+
+
+
+
+Train.py => predicting house prices 
+Using scikit-learn Library to train model off data
